@@ -6,6 +6,9 @@ BUILD := ./build
 SRCS := $(wildcard $(SRC)/*.c)
 OBJS := $(SRCS:$(SRC)/%.c=$(BUILD)/%.o)
 
+INCLUDES :=
+LIBS     :=
+
 TARGET := $(BUILD)/main
 
 .PHONY: all debug perf run bear clean
